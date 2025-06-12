@@ -1,4 +1,4 @@
-//alert("HELLO))");
+/*alert("HELLO Victoria))");
 const isDaynow = false;
 let color = null;
 if (isDaynow) {
@@ -48,4 +48,6 @@ switch (operator) {
 
   default:
     alert("No correct");
-}
+}/*
+
+
