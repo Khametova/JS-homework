@@ -2,20 +2,20 @@
 const isDaynow = false;
 let color = null;
 if (isDaynow) {
-  color = `white`;
-} else {
   color = `black`;
+} else {
+  color = `white`;
 }
 
 console.log(color);
 
 if (isDaynow) {
   document.write(
-    `<p><span style="color:${color};background-color:grey;"</span>is Day now</p>`
+    `<p><span style="color:${color};background-color:white;"</span>is Day now</p>`
   );
 } else {
   document.write(
-    `<p> <span style="color:${color};background-color:blue;"</span>is Night now</p>`
+    `<p> <span style="color:${color};background-color:black;"</span>is Night now</p>`
   );
 }
 
@@ -30,11 +30,22 @@ if (isOnline) {
 }
 
 const amount = +prompt("Enter amount");
-const discount1 = amount - amount * 0.03;
-const discount2 = amount - amount * 0.05;
+let discount1 = 0.03;
+let discount2 = 0.05;
 
-if (amount > 500) {
-  console.log("sum", discount1);
-} else if (amount > 800) {
-  console.log("sum", discount2);
+if (amount > 500 && amount < 800) {
+  console.log("sum", amount - amount * discount1);
+} else if (amount >= 800) {
+  console.log("sum", amount - amount * discount2);
+}
+
+let operator = prompt("Enter any number");
+switch (operator) {
+  case "7":
+  case "Sunday":
+    alert("Yes 7 Sunday");
+    break;
+
+  default:
+    alert("No correct");
 }
