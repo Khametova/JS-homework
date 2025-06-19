@@ -48,6 +48,20 @@ switch (operator) {
 
   default:
     alert("No correct");
-}/*
+}
 
-
+const operator = prompt("Enter any number");
+switch (operator) {
+  case "1":
+    alert("Monday");
+    break;
+  case "2":
+    alert("Tuesday");
+    break;
+  // тут аналогічно дні, яких не вистачає
+  case "7":
+    alert("Sunday");
+    break;
+  default:
+    alert("No correct");
+}*/
