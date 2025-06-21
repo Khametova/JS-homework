@@ -66,10 +66,25 @@ switch (operator) {
     alert("No correct");
 }*/
 //let sum = 0;
-const numbLimit = 100;
+
+/*const numbLimit = 100;
 let s = 1;
+sum = 0;
 while (s <= numbLimit) {
-  //sum = s + sum;
+  sum = s + sum;
   s++;
 }
-console.log("sum", sum);
+console.log("sum", sum); */
+
+for (let i = 25; i >= 0; i--) {
+  console.log("i", i);
+}
+
+let currentPage = 10;
+const page = 50;
+
+while (currentPage <= page) {
+  if (currentPage % 5 === 0) console.log("currentPage", currentPage);
+
+  currentPage++;
+}
