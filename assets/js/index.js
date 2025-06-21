@@ -65,3 +65,11 @@ switch (operator) {
   default:
     alert("No correct");
 }*/
+//let sum = 0;
+const numbLimit = 100;
+let s = 1;
+while (s <= numbLimit) {
+  //sum = s + sum;
+  s++;
+}
+console.log("sum", sum);
